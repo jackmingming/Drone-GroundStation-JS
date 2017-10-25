@@ -1,0 +1,19 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/leaflet-map/leaflet-map.html">
+
+<dom-module id="gs-map">
+  <template>
+    <style>
+      leaflet-map {
+        width: 100%;
+        height: 480px;
+      }
+    </style>
+    <leaflet-map latitude="37.78553" longitude="-122.46097" url="http://192.168.65.131/" zoom="15">
+      <leaflet-icon id="vehicle" iconWidth="100px" iconHeight="100px" icon-url="https://stendhalgame.org/images/mapmarker/me.png"> </leaflet-icon>
+      <leaflet-marker latitude="37.78553" longitude="-122.46097" icon="vehicle"></leaflet-marker>
+      <leaflet-scale-control position="topright" metric imperial></leaflet-scale-control>
+    </leaflet-map>
+  </template>
+  <script src="gs-map.js"></script>
+</dom-module>
